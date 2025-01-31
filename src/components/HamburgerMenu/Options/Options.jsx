@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { red } from '@mui/material/colors';
 
 function Options({ opened, setOpen }) {
   const variants = {

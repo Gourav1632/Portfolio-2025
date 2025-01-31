@@ -5,7 +5,7 @@ function Education() {
   return (
     <div className="education w-full">
         <div className='education-heading font-fira font-semibold text-xl mt-20 mb-10'>.../My Education...</div>
-        <div className="education-container">
+        <div className="education-container text-[#a6a6a6]">
             <div className="education-card flex gap-4 items-center">
                 <motion.div 
                     initial={{opacity:0,y:"50px"}} 
@@ -14,7 +14,7 @@ function Education() {
                     viewport={{ once: true }} 
                     className="logo w-30 aspect-square"
                 > 
-                  <img src="/kota.png" alt="iiitkota" />
+                  <img className='rounded-full' src="/kota.png" alt="iiitkota" />
                 </motion.div>
                 <div className="education-details">
                     <motion.div
@@ -22,7 +22,7 @@ function Education() {
                       whileInView={{ opacity: 1, y: 0 }} 
                       transition={{duration:.3}} 
                       viewport={{ once: true }} 
-                      className="organisation font-semibold text-xl xl:text-2xl"
+                      className="organisation font-semibold text-xl xl:text-2xl text-white"
                     >
                       Indian Institue Of Information Technology Kota
                     </motion.div>
@@ -31,7 +31,7 @@ function Education() {
                       whileInView={{ opacity: 1, y: 0 }} 
                       transition={{duration:.3}} 
                       viewport={{ once: true }} 
-                      className="degree font-semibold xl:text-xl"
+                      className="degree font-semibold xl:text-xl text-white"
                     >
                       Bachelor Of Technology
                       </motion.div>

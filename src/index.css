@@ -5,3 +5,10 @@
   --font-fira: "Fira Code", serif; 
   --font-handwriting:  "Allison", serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: #00ff00; /* Neon green background */
+  color: #000; /* Text color (optional) */
+}
