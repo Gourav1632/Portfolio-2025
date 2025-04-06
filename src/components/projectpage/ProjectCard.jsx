@@ -60,11 +60,11 @@ function ProjectCard({title,description,img, link,github,tech , leftAlign}) {
             <div className="links flex gap-10">
                 <div className=" relative github-link flex items-center">
                     <div className="github-icon border-[#a6a6a6] border-1 rounded-full aspect-square w-10 flex justify-center items-center"><PiGithubLogoFill size={16} className='text-white' /></div>
-                    <motion.div transition={{duration:.3}} whileHover={{scale:1.05}} className="cursor-pointer hover:bg-[#39FF14] absolute redirect-icon  bg-white rounded-full aspect-square w-10 flex justify-center items-center left-7"><a  target='_blank' href={github }><BsArrowUpRight size={16} className='text-black'/></a></motion.div>
+                    <motion.div transition={{duration:.3}} whileHover={{scale:1.05}} className="cursor-pointer hover:bg-[#b8001f] absolute redirect-icon  bg-white rounded-full aspect-square w-10 flex justify-center items-center left-7 text-black hover:text-white"><a  target='_blank' href={github }><BsArrowUpRight size={16} className=''/></a></motion.div>
                 </div>
                 <div className=" relative github-link flex items-center">
                     <div className="github-icon border-[#a6a6a6] border-1 rounded-full aspect-square w-10 flex justify-center items-center"><IoIosLink size={16} className='text-white' /></div>
-                    <motion.div transition={{duration:.3}} whileHover={{scale:1.05}} className="cursor-pointer hover:bg-[#39FF14] absolute redirect-icon bg-white rounded-full aspect-square w-10 flex justify-center items-center left-7"><a  target='_blank' href={link}><BsArrowUpRight size={16} className='text-black'/></a></motion.div>
+                    <motion.div transition={{duration:.3}} whileHover={{scale:1.05}} className="cursor-pointer hover:bg-[#b8001f] absolute redirect-icon bg-white rounded-full aspect-square w-10 flex justify-center items-center left-7 text-black hover:text-white"><a  target='_blank' href={link}><BsArrowUpRight size={16} className=''/></a></motion.div>
                 </div>
             </div>
         </motion.div>

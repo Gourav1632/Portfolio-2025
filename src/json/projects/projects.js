@@ -3,7 +3,7 @@ const projects = [
     "title": "Ember Chat App",
     "description": "Ember Chat App is a feature-rich real-time chat application that lets users engage in instant messaging, manage friends, update profile photos, and discover new connections. With built-in emoji support and a responsive, user-friendly interface, Ember is the perfect platform for staying connected and meeting new people.",
     "tech": ["React", "Node", "Express", "Socket.io", "MongoDB"],
-    "img": "/Projects/Ember.png",
+    "img": "/Projects/ember.png",
     "github": "https://github.com/Gourav1632/Live-Chat-App",
     "link": "https://ember-chat-app.netlify.app/"
   },
@@ -16,13 +16,14 @@ const projects = [
     "link": "https://github.com/Gourav1632/Re.Mind-Chrome-Extension"
   },
   {
-    "title": "Personal Portfolio",
-    "description": "Explore a curated collection of my work, highlighting my journey in crafting innovative solutions and leveraging technology. From engaging projects to creative problem-solving, this portfolio reflects my passion for pushing boundaries and delivering impactful results.",
-    "tech": ["HTML", "CSS", "JavaScript", "React", "Framer Motion","TailwindCss"],
-    "img": "/Projects/Portfolio.png",
-    "github": "https://github.com/Gourav1632/Portfolio-2025.git",
-    "link": "https://gouravkumar.netlify.app/"
+    "title": "Crypt Raider Game",
+    "description": "A puzzle-based dungeon escape game built using Unreal Engine 5. It features trigger and mover components that control doors, platforms, and interactive elements. The objective is to solve puzzles and retrieve a hidden golden statue from the crypt.",
+    "tech": ["Unreal Engine 5", "C++"],
+    "img": "/Projects/cryptraider.png",
+    "github": "https://github.com/Gourav1632/CryptRaider-Game",
+    "link": "https://github.com/Gourav1632/CryptRaider-Game"
   }
+  
 ];
 
 export default projects;

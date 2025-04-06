@@ -1,6 +1,7 @@
 import React from 'react'
 import SkillCard from '../components/skillpage/SkillCard'
 import { motion } from 'framer-motion'
+import { LuSettings } from "react-icons/lu";
 
 function Skills() {
   return (
@@ -38,7 +39,20 @@ function Skills() {
             <SkillCard width="w-full" isWhite={false  } title="Programming" body="C / C++ / Javascipt / Python" />
           </div>
         </div>
-        <SkillCard width="w-full" isWhite={true} title="Other Interests" body="Game Development / Unreal Engine / AI/ML" />
+        <SkillCard width="w-full" isWhite={false} title="AI-ML & Data Science" body="Scikit Learn / TensorFlow / Numpy / Pandas / Matplotlib" />
+        <div className="container flex w-full gap-4 items-center">
+          <div className="skill w-full">
+            <SkillCard width="w-full" isWhite={true} title="Game Development" body="Unreal Engine 5 / C++" />
+          </div>
+              <motion.div
+              initial={{opacity:0,y:"50px"}} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              transition={{duration:.3}} 
+              viewport={{ once: true }} >
+
+          <div className="code font-fira whitespace-nowrap  font-semibold text-white text-4xl"><LuSettings fontSize={60} /></div>
+              </motion.div>
+        </div>
 
       </div>
 
@@ -87,7 +101,25 @@ function Skills() {
 
           </div>
 
-            <SkillCard width="w-full" isWhite={true} title="Other Interests" body="Game Development / Unreal Engine / AI/ML" />
+            <div className="container flex gap-3">
+              <div className="web-development w-full flex gap-4 ">
+                  <SkillCard width="w-full" isWhite={false} title="AI-ML & Data Science" body="Scikit Learn / TensorFlow / Numpy / Pandas / Matplotlib" />
+              <div className="container flex w-full items-center">
+                <SkillCard width="w-full" isWhite={true} title="Game Development" body="Unreal Engine 5 / C++" />
+                <div className="skill">
+                </div>
+                    <motion.div
+                    initial={{opacity:0,y:"50px"}} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{duration:.3}} 
+                    viewport={{ once: true }} >
+
+                <div className="code font-fira whitespace-nowrap px-10 font-semibold text-white text-2xl  2xl:text-4xl"><LuSettings fontSize={80} /></div>
+                    </motion.div>
+              </div>
+            </div>
+
+          </div>
         </div>
     </section>
   )

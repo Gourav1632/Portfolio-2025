@@ -8,7 +8,7 @@ function Work() {
               Work
           </div>
           <hr className=' border-[#3d3d3d] border-[1px] mt-4' />
-            <WorkCard starting="Jan 2025"  ending="Present" description="Responsible for designing and developing UI/UX for the institute's web projects. Collaborating with team members to improve user experience and accessibility." organisation="IIIT Kota" job="Web Team | UI/UX Designer" />
+            <WorkCard starting="Jan 2025"  ending="Present" description="Responsible for developing & handling full-stack web projects at the institute, while also contributing to UI/UX improvements. Collaborated with the team to enhance accessibility and overall user experience." organisation="IIIT Kota" job="Web Team | Full Stack Developer" />
     </section>
   )
 }

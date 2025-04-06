@@ -3,13 +3,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Education from './Education';
 
 function About() {
-  // const ref = useRef();
-  // const { scrollYProgress } = useScroll({
-  //   target: ref,
-  //   offset: ['start end', 'end start'],
-  // });
-  // const x1 = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
-  // const x2 = useTransform(scrollYProgress, [0, 1], ['0%', '-20%']);
 
   return (
     <section id="about" className="relative font-[Open_Sans] bg-[#121212] text-white py-20 px-8 md:px-20 lg:px-40 xl:px-60 2xl:px-80 flex flex-col items-center justify-center">

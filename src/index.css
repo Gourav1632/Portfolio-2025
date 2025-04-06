@@ -9,6 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 ::selection {
-  background-color: #00ff00; /* Neon green background */
+  background-color: #b8001f; /* Neon green background */
   color: #000; /* Text color (optional) */
 }

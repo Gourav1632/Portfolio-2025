@@ -5,7 +5,7 @@ function ToggleButton({ opened, setOpen }) {
   return (
     <motion.button
       onClick={() => setOpen((prev) => !prev)}
-      className={` toggle-button z-50 fixed top-4 right-4 overflow-hidden  ${opened? 'bg-[#39ff14] ' : 'bg-[#121212]'} w-[80px] aspect-square rounded-full  cursor-pointer`}
+      className={` toggle-button z-50 fixed top-4 right-4 overflow-hidden  ${opened? 'bg-[#B8001F] ' : 'bg-[#121212]'} w-[80px] aspect-square rounded-full  cursor-pointer`}
       whileHover= "hover"
     >
       <motion.div
@@ -30,7 +30,7 @@ function ToggleButton({ opened, setOpen }) {
 
       <motion.div
         style={{zIndex:-1}}
-        className='select-none toggle-button-overlay absolute bg-[#39ff14] rounded-full h-[90px] aspect-square'
+        className='select-none toggle-button-overlay absolute bg-[#B8001F] rounded-full h-[90px] aspect-square'
         initial={{ y: '100%',x:'-5px' }}
         variants ={{hover: { y: '-49%' }}}
         transition={{ duration: 0.3, ease: 'easeInOut' }}

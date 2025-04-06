@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 function Home() {
   return (
-    <section id='home' className="bg-[#121212]  min-h-screen p-8 px-8 md:px-10 md:px-20 lg:px-28 font-[Open_Sans] flex flex-col items-center justify-center">
+    <section id='home' className="bg-[#121212]  min-h-screen py-20 px-8 md:px-20 lg:px-40 xl:px-60 2xl:px-80 font-[Open_Sans] flex flex-col items-center justify-center">
       <div className="circle absolute overflow-clip top-0 right-0 ">
         <div className="relative -top-[120px] -right-[90px] w-[300px] aspect-square rounded-full border-[#3d3d3d] border-2"></div>
       </div>
@@ -43,10 +43,11 @@ function Home() {
         </div>
           <div className="resume-profile h- flex gap-6">
             <ResumeLink />
-            <Profile />
+            <ProjectsLink />
           </div>
           <div className="project-link">
-            <ProjectsLink />
+            
+            <Profile />
           </div>
       </div>
 
@@ -63,8 +64,8 @@ function Home() {
                   Say Hello
               </div>
             <a href="#contact">
-            <div className="arrow-icon hover:bg-[#39ff14] bg-white rounded-full aspect-square h-10 xl:h-15 flex items-center justify-center cursor-pointer">
-              <BsArrowRight size={25} className="text-black flex " />
+            <div className="arrow-icon hover:bg-[#b8001f] text-black hover:text-white  bg-white rounded-full aspect-square h-10 xl:h-15 flex items-center justify-center cursor-pointer">
+              <BsArrowRight size={25} className=" flex " />
             </div>
               </a>
             </motion.div>
@@ -75,7 +76,7 @@ function Home() {
               <span className="italic font-semibold text-white">creative design</span> &{' '}
               <span className="italic font-semibold text-white">efficient code</span>{' '}.
             </motion.div>
-            <div className="heading leading-none text-7xl xl:text-8xl  2xl:text-9xl font-fira font-semibold flex flex-col w-full">
+            <div className="heading whitespace-nowrap leading-none text-7xl xl:text-8xl  2xl:text-9xl font-fira font-semibold flex flex-col w-full">
                               <motion.div initial={{opacity:0,y:"-10px"}} animate={{opacity:1,y:"0px"}} transition={{duration:0.5}} className="gourav text-right">Gourav Kumar</motion.div>
 
             </div>
