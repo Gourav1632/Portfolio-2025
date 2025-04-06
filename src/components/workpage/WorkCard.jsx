@@ -33,10 +33,10 @@ function WorkCard({ organisation, job, starting, ending, description }) {
             <div className="ending whitespace-nowrap">{ending}</div>
           </div>
           <div className="work w-full flex flex-col lg:flex-row gap-2 lg:gap-50 justify-between text-right">
-            <div className="organisation text-[14px] lg:text-2xl whitespace-nowrap">
+            <div className="organisation text-[14px] lg:text-2xl ">
               {organisation}
             </div>
-            <div className="job font-fira text-[14px] lg:text-2xl whitespace-nowrap">
+            <div className="job font-fira text-[14px] lg:text-2xl ">
               {job}
             </div>
           </div>
