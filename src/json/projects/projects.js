@@ -16,10 +16,10 @@ const projects = [
     "link": "https://github.com/Gourav1632/Re.Mind-Chrome-Extension"
   },
   {
-    "title": "Crypt Raider Game",
+    "title": "Dungeon Raider Game",
     "description": "A puzzle-based dungeon escape game built using Unreal Engine 5. It features trigger and mover components that control doors, platforms, and interactive elements. The objective is to solve puzzles and retrieve a hidden golden statue from the crypt.",
     "tech": ["Unreal Engine 5", "C++"],
-    "img": "/Projects/cryptraider.png",
+    "img": "/Projects/dungeonraider.png",
     "github": "https://github.com/Gourav1632/CryptRaider-Game",
     "link": "https://github.com/Gourav1632/CryptRaider-Game"
   }
