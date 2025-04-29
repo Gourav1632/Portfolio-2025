@@ -1,14 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&family=Fira+Code:wght@300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-fira: "Fira Code", serif; 
-  --font-handwriting:  "Allison", serif;
+/* Define font variables globally */
+:root {
+  --font-fira: "Fira Code", monospace;
+  --font-handwriting: "Allison", cursive;
 }
+
+@layer utilities {
+  .font-fira {
+    font-family: var(--font-fira);
+  }
+
+  .font-handwriting {
+    font-family: var(--font-handwriting);
+  }
+
+  .font-open_sans {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 ::selection {
-  background-color: #b8001f; /* Neon green background */
-  color: #000; /* Text color (optional) */
+  background-color: #b8001f;
+  color: #000;
+}
+
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.filter-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.filter-scroll::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.filter-scroll::-webkit-scrollbar-track {
+  background: #1e1e1e;
 }

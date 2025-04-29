@@ -27,7 +27,7 @@ function Options({ opened, setOpen }) {
     },
   };
 
-  const options = ["home", "about", "skills", "projects", "contact"];
+  const options = ["home", "about", "skills","work", "projects", "contact"];
 
   return (
     <motion.div

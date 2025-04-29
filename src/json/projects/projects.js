@@ -5,7 +5,8 @@ const projects = [
     "tech": ["React", "Node", "Express", "Socket.io", "MongoDB"],
     "img": "/Projects/ember.png",
     "github": "https://github.com/Gourav1632/Live-Chat-App",
-    "link": "https://ember-chat-app.netlify.app/"
+    "link": "https://ember-chat-app.netlify.app/",
+    "category":["Web Development"]
   },
   {
     "title": "Re:Mind-Chrome Ext.",
@@ -13,7 +14,8 @@ const projects = [
     "tech": ["Chrome Alarms API", "Chrome Notifications API", "Chrome Tabs API"],
     "img": "/Projects/Remind.png",
     "github": "https://github.com/Gourav1632/Re.Mind-Chrome-Extension",
-    "link": "https://github.com/Gourav1632/Re.Mind-Chrome-Extension"
+    "link": "https://github.com/Gourav1632/Re.Mind-Chrome-Extension",
+    "category":["Chrome Extension"]
   },
   {
     "title": "Dungeon Raider Game",
@@ -21,7 +23,17 @@ const projects = [
     "tech": ["Unreal Engine 5", "C++"],
     "img": "/Projects/dungeonraider.png",
     "github": "https://github.com/Gourav1632/CryptRaider-Game",
-    "link": "https://github.com/Gourav1632/CryptRaider-Game"
+    "link": "https://github.com/Gourav1632/CryptRaider-Game",
+    "category":["Game Development"]
+  },
+  {
+    "title":"Screen Capture App",
+    "description":"A simple desktop application for capturing screenshots at regular intervals. The application allows users to configure capture settings, select a destination folder, and start/stop the capture process.",
+    "tech":["ElectronJS"],
+    "img":"/Projects/ScreenCapture.png",
+    "github": "https://github.com/Gourav1632/Screen-Capture-Electron-App.git",
+    "link":"https://github.com/Gourav1632/Screen-Capture-Electron-App.git",
+    "category":["Desktop App"]
   }
   
 ];

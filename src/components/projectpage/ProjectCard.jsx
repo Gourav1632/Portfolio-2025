@@ -29,7 +29,7 @@ function ProjectCard({title,description,img, link,github,tech , leftAlign}) {
         whileInView={{ opacity: 1, y: 0 }} 
         transition={{duration:.3}} 
         viewport={{ once: true }} > 
-            <div className="title font-[Open_Sans] text-[16px] lg:text-xl">{title}</div>
+            <div className="title  text-white font-[Open_Sans] text-[16px] lg:text-xl">{title}</div>
         </motion.div>
             <motion.div
         initial={{opacity:0,y:"50px"}} 
