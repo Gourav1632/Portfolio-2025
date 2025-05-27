@@ -1,5 +1,15 @@
 const projects = [
   {
+  "title": "Into the Repo",
+  "description": "Into the Repo is a developer tool that helps you understand any codebase faster. It generates interactive system architecture maps, dependency graphs, critical file highlights, and personalized onboarding guides using AST parsing and LLMs. Ideal for onboarding, open-source contributions, or diving into freelance projects with minimal context.",
+  "tech": ["Next.js", "TypeScript", "FastAPI", "Tree-sitter", "Gemini API", "React Flow", "IndexedDB", "GitHub API"],
+  "img": "/Projects/intotherepo.png",
+  "github": "https://github.com/Gourav1632/into-the-repo",
+  "link": "https://into-the-repo.vercel.app/",
+  "category": ["AI", "Developer Tools", "Web Development"]
+}
+,
+  {
     "title": "Ember Chat App",
     "description": "Ember Chat App is a feature-rich real-time chat application that lets users engage in instant messaging, manage friends, update profile photos, and discover new connections. With built-in emoji support and a responsive, user-friendly interface, Ember is the perfect platform for staying connected and meeting new people.",
     "tech": ["React", "Node", "Express", "Socket.io", "MongoDB"],
