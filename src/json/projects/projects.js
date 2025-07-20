@@ -1,5 +1,14 @@
 const projects = [
   {
+  "title": "Chalice of the King",
+  "description": "Chalice of the King is a high-stakes, web-based multiplayer game blending deception, deduction, and strategic risk-taking. Inspired by the viral tension of Buckshot Roulette, players take turns facing sealed goblets—some safe, some poisoned—making crucial decisions to drink, pass, or bluff. With real-time multiplayer, a custom AI opponent, integrated voice chat, and artifact-based abilities, the game challenges your judgment, timing, and ability to read the room.",
+  "tech": ["React", "TypeScript", "WebSockets", "WebRTC", "Node.js", "Express", "Shepherd.js", "AI"],
+  "img": "/Projects/chaliceoftheking.png",
+  "github": "https://github.com/Gourav1632/chalice-of-the-king",
+  "link": "https://chalice-of-the-king.vercel.app/",
+  "category": ["AI", "Game Development", "Web Development"]
+},
+  {
   "title": "Into the Repo",
   "description": "Into the Repo is a developer tool that helps you understand any codebase faster. It generates interactive system architecture maps, dependency graphs, critical file highlights, and personalized onboarding guides using AST parsing and LLMs. Ideal for onboarding, open-source contributions, or diving into freelance projects with minimal context.",
   "tech": ["Next.js", "TypeScript", "FastAPI", "Tree-sitter", "Gemini API", "React Flow", "IndexedDB", "GitHub API"],
@@ -12,7 +21,7 @@ const projects = [
   {
     "title": "Ember Chat App",
     "description": "Ember Chat App is a feature-rich real-time chat application that lets users engage in instant messaging, manage friends, update profile photos, and discover new connections. With built-in emoji support and a responsive, user-friendly interface, Ember is the perfect platform for staying connected and meeting new people.",
-    "tech": ["React", "Node", "Express", "Socket.io", "MongoDB"],
+    "tech": ["React", "Node.js", "Express", "WebSockets", "MongoDB"],
     "img": "/Projects/ember.png",
     "github": "https://github.com/Gourav1632/Live-Chat-App",
     "link": "https://ember-chat-app.netlify.app/",
