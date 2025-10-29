@@ -9,20 +9,20 @@ function About() {
       
       <div className=" flex flex-col lg:flex-row gap-10 lg:gap-20">
         <motion.div
-          initial={{ opacity: 0, x: '-30px' }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
+          initial={{opacity:0,y:"50px"}} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          transition={{duration:.3}} 
+          viewport={{ once: true }} 
           className="text-2xl lg:text-3xl  flex-[70] text-[#a6a6a6]  border border-[#3d3d3d] rounded-[48px] p-8"
         >
           Hi! I'm Gourav, a <span className='italic text-white'>full-stack developer</span> with a strong curiosity for new technologies, always exploring, innovating, and staying updated with the latest advancements.
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: '30px' }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3 }}
-          viewport={{ once: true }}
+          initialinitial={{opacity:0,y:"50px"}} 
+          whileInView={{ opacity: 1, y: 0 }} 
+          transition={{duration:.3}} 
+          viewport={{ once: true }} 
           className="text-2xl lg:text-3xl flex-[30] "
         >
           <Profile />
