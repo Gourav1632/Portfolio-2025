@@ -1,24 +1,53 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Cursor from "./components/cursor/Cursor";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
 import Skills from "./pages/Skills";
 import Work from "./pages/Work";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import { GameContext } from "./contexts/GameContext";
+import AchievementPopup from "./components/AchievementPopup";
 
 function App() {
+  const { foundGlasses, setFoundGlasses, foundLockedDrawer } = useContext(GameContext);
+  const [showAchievement, setShowAchievement] = useState(false);
+
+  // ✅ On mount, check localStorage
+  useEffect(() => {
+    const hasSolvedPuzzle = localStorage.getItem("glassesFound");
+    if (hasSolvedPuzzle === "true") {
+      setFoundGlasses(true);
+    }
+  }, [setFoundGlasses]);
+
+  // ✅ When glasses are found for the first time
+  useEffect(() => {
+    if (foundGlasses && foundLockedDrawer) {
+        localStorage.setItem("glassesFound", "true");
+        setShowAchievement(true);
+        const timer = setTimeout(() => setShowAchievement(false), 4000);
+        return () => clearTimeout(timer);
+      }
+  }, [foundGlasses, foundLockedDrawer]);
 
   return (
     <>
-          <HamburgerMenu />
-          <Home />
-          <About />
-          <Skills />
-          <Work />
-          <Projects />
-          <Contact/>
+      <HamburgerMenu />
+      <Home />
+      <About />
+      <Skills />
+      <Work />
+      <Projects />
+      <Contact />
+
+      {/* ✅ Achievement popup */}
+      <AchievementPopup
+        show={showAchievement}
+        img="glasses.png"
+        title="Achievement Unlocked"
+        description="You've got an eagle eye!"
+      />
     </>
   );
 }

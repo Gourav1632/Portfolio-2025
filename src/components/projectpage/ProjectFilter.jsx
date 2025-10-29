@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import projects from '../../json/projects/projects';
+import projects from '../../data/projects/projects';
 
 function ProjectFilter({ onClose, onApply, selectedCategories, selectedTechnologies }) {
   const categories = [...new Set(projects.flatMap(p => p.category))];
