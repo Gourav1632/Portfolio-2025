@@ -89,7 +89,7 @@ function Home() {
         {/* Avatar + Message Box */}
         <div className="relative flex items-center justify-center">
           {/* Avatar */}
-          <div className="relative w-[200px] lg:w-[300px]">
+          <div className="relative w-[150px] md:w-[200px] lg:w-[300px]">
             <img
               src={avatarImage}
               alt="avatar"
@@ -98,7 +98,7 @@ function Home() {
           </div>
 
           {/* Dialogue Box */}
-          <div className="relative h-[150px] translate-y-10 -translate-x-5 lg:-translate-x-10 w-2/3 lg:w-[300px] rounded-xl shadow-lg flex flex-col">
+          <div className="relative h-[150px] translate-y-10 -translate-x-5 lg:-translate-x-10 w-[200px] lg:w-[300px] rounded-xl shadow-lg flex flex-col">
             <div className="text-lg lg:text-3xl font-pixel text-left text-gray-400">
               <Typewriter
                 options={{
