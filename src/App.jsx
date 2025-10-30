@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import HamburgerMenu from "./components/HamburgerMenu/HamburgerMenu";
@@ -13,7 +13,6 @@ function App() {
   const { foundGlasses, setFoundGlasses, foundLockedDrawer } = useContext(GameContext);
   const [showAchievement, setShowAchievement] = useState(false);
 
-  // ✅ On mount, check localStorage
   useEffect(() => {
     const hasSolvedPuzzle = localStorage.getItem("glassesFound");
     if (hasSolvedPuzzle === "true") {
@@ -21,7 +20,6 @@ function App() {
     }
   }, [setFoundGlasses]);
 
-  // ✅ When glasses are found for the first time
   useEffect(() => {
     if (foundGlasses && foundLockedDrawer) {
         localStorage.setItem("glassesFound", "true");
@@ -41,7 +39,7 @@ function App() {
       <Projects />
       <Contact />
 
-      {/* ✅ Achievement popup */}
+      {/* Achievement popup */}
       <AchievementPopup
         show={showAchievement}
         img="glasses.png"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const LockPuzzle = ({ correctCode = "1632", onUnlock }) => {
@@ -25,7 +25,7 @@ const LockPuzzle = ({ correctCode = "1632", onUnlock }) => {
       className="relative w-[320px] p-6 rounded-sm text-center overflow-hidden border-8 border-[#010100]"
     >
       {/* Warm overlay */}
-      <div className="absolute inset-0 bg-[#c7956a]" />
+      <div className="absolute inset-0 bg-[#b87f4e]" />
 
       {/* Drawer interior (locked) */}
       {!unlocked && (
@@ -67,7 +67,7 @@ const LockPuzzle = ({ correctCode = "1632", onUnlock }) => {
         >
           <p className="text-3xl mb-3 font-pixel">Found!</p>
           <motion.img
-            src="glasses.png" // 👈 Replace with your actual image path
+            src="glasses.png" 
             alt="Glasses Found"
             className="w-28 h-28 object-contain mt-2"
             initial={{ opacity: 0, y: 20 }}

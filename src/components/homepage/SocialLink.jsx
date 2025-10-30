@@ -1,7 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
-function SocialLink({ alt = "", link, Icon }) {
+function SocialLink({ alt, link, Icon }) {
   return (
     <a
       href={link}

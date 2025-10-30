@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const AchievementPopup = ({ show,img, title = "Achievement Unlocked!", description = "You found the hidden glasses!" }) => {

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import ProjectCard from '../components/projectpage/ProjectCard';
 import { AnimatePresence, motion } from 'framer-motion';
 import ProjectFilter from '../components/projectpage/ProjectFilter';

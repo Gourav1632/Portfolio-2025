@@ -1,4 +1,3 @@
-import React from 'react'
 import Tech from './Tech'
 import { BsArrowUpRight } from "react-icons/bs";
 import { IoIosLink } from "react-icons/io";

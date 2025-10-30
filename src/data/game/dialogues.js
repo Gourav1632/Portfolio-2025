@@ -74,20 +74,25 @@ const dialogues = {
     },
   ],
 
-  normal: [
-    {
-      message: "Hey again! Still exploring around?",
-      choices: ["Yeah, just wandering."],
-    },
-    {
-      message: "Nice, take your time. There’s more to find than you think.",
-      choices: ["You sound suspiciously cryptic."],
-    },
-    {
-      message: "What can I say? Keeps things interesting.",
-      choices: ["..."],
-    },
-  ],
+normal: [
+  {
+    message: "Hey there! Back again?",
+    choices: ["Just looking around."],
+  },
+  {
+    message: "Nice. Found anything cool yet?",
+    choices: ["Still exploring.", "Not yet, but soon!"],
+  },
+  {
+    message: "Good! There’s more to this place than it seems.",
+    choices: ["Sounds mysterious."],
+  },
+  {
+    message: "Heh, I’ll let you find out yourself. Go explore a bit!",
+    choices: ["Catch you later!"],
+  },
+],
+
 };
 
 export default dialogues;

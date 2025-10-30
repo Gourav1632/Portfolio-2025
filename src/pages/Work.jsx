@@ -1,6 +1,4 @@
-import React from 'react'
 import WorkCard from '../components/workpage/WorkCard'
-import { FiFilter } from "react-icons/fi";
 
 
 function Work() {

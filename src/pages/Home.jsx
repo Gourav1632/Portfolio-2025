@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useEffect, useState } from "react";
 import SocialLink from "../components/homepage/SocialLink";
 import { FaLinkedinIn } from "react-icons/fa";
 import { PiReadCvLogoFill } from "react-icons/pi";
@@ -78,7 +78,7 @@ function Home() {
             Just completely lost, turning caffeine into code.  
             I remember glancing at all my <span className="italic text-white font-bold">creations</span> —  
             admiring the handiwork, tweaking every pixel.  
-            I must’ve set them down somewhere in that digital workshop...  
+            I must’ve set them down somewhere in that <span className="italic text-white font-bold">digital workshop</span>...  
             or maybe they wandered off themselves.
           </p>
         </div>
@@ -87,9 +87,9 @@ function Home() {
       {/* Main content */}
       <div className="py-10 flex flex-col items-center justify-center text-center relative">
         {/* Avatar + Message Box */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex max-w-[600px] items-center justify-center">
           {/* Avatar */}
-          <div className="relative w-[150px] md:w-[200px] lg:w-[300px]">
+          <div className="relative flex-2 ">
             <img
               src={avatarImage}
               alt="avatar"
@@ -98,8 +98,8 @@ function Home() {
           </div>
 
           {/* Dialogue Box */}
-          <div className="relative h-[150px] translate-y-10 -translate-x-5 lg:-translate-x-10 w-[200px] lg:w-[300px] rounded-xl shadow-lg flex flex-col">
-            <div className="text-lg lg:text-3xl font-pixel text-left text-gray-400">
+          <div className="relative h-[150px] flex-3 translate-y-10 -translate-x-5 lg:-translate-x-10 rounded-xl shadow-lg flex flex-col">
+            <div className="text-lg md:text-2xl lg:text-3xl font-pixel text-left text-gray-400">
               <Typewriter
                 options={{
                   strings: [currentDialogues.message],
@@ -113,12 +113,12 @@ function Home() {
             </div>
 
             {showChoices && (
-              <div className="flex flex-col gap-2 mt-2">
+              <div className="flex flex-col">
                 {currentDialogues.choices.map((choice, i) => (
                   <button
                     key={i}
                     onClick={() => handleChoiceClick(choice)}
-                    className="text-gray-300 text-md lg:text-2xl px-3 py-2 text-left font-pixel transition-all duration-200"
+                    className="text-gray-300 text-md md:text-xl lg:text-2xl px-3 py-1 text-left font-pixel transition-all duration-200"
                   >
                     ▶ {choice}
                   </button>

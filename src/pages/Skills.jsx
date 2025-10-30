@@ -1,4 +1,3 @@
-import React from 'react'
 import SkillCard from '../components/skillpage/SkillCard'
 import { motion } from 'framer-motion'
 import { LuSettings } from "react-icons/lu";

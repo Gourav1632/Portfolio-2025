@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 
 function SkillCard({title, body,isWhite,width}) {
