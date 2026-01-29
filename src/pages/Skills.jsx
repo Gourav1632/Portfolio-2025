@@ -35,7 +35,7 @@ function Skills() {
           <div className="code whitespace-nowrap font-fira  font-semibold text-white text-4xl">{"{../}"}</div>
               </motion.div>
           <div className="skill w-full">
-            <SkillCard width="w-full" isWhite={false  } title="Programming" body="C / C++ / Javascipt / Python" />
+            <SkillCard width="w-full" isWhite={false  } title="Programming" body="C / C++ / Javascipt / Python / Go (Golang)" />
           </div>
         </div>
         <SkillCard width="w-full" isWhite={false} title="AI-ML & Data Science" body="Scikit Learn / TensorFlow / Numpy / Pandas / Matplotlib" />

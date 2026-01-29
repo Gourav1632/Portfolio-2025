@@ -1,4 +1,5 @@
 import WorkCard from '../components/workpage/WorkCard'
+import workExperiences from '../data/work/work'
 
 
 function Work() {
@@ -9,7 +10,16 @@ function Work() {
               Work
           </div>
           <hr className=' border-[#3d3d3d] border-[1px] mt-4' />
-            <WorkCard starting="Jan 2025"  ending="Present" description="Responsible for developing & handling full-stack web projects at the institute, while also contributing to UI/UX improvements. Collaborated with the team to enhance accessibility and overall user experience." organisation="IIIT Kota" job="Web Team | Full Stack Developer" />
+            {workExperiences.map((work, index) => (
+                <WorkCard 
+                    key={index} 
+                    starting={work.starting} 
+                    ending={work.ending} 
+                    description={work.description} 
+                    organisation={work.organisation} 
+                    job={work.job} 
+                />
+            ))}
     </section>
   )
 }

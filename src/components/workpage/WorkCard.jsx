@@ -1,5 +1,6 @@
 import  { useState, useRef, useLayoutEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { FaChevronDown } from 'react-icons/fa'
 
 function WorkCard({ organisation, job, starting, ending, description }) {
   const [open, setOpen] = useState(false);
@@ -28,17 +29,22 @@ function WorkCard({ organisation, job, starting, ending, description }) {
         } cursor-pointer flex flex-col gap-4 pt-4`}
       >
         <div className="px-8 md:px-20 lg:px-20 xl:px-40 2xl:px-80 font-[Open_Sans] flex items-center text-2xl gap-15 lg:gap-30">
-          <div className="duration min-w-1/6 text-[#a6a6a6] text-[12px] lg:text-xl flex flex-col lg:flex-row">
+          <div className="duration min-w-1/6 text-[#a6a6a6] text-[12px] lg:text-xl flex flex-row">
             <div className="starting whitespace-nowrap">{starting} -&nbsp;</div>
             <div className="ending whitespace-nowrap">{ending}</div>
           </div>
-          <div className="work w-full flex flex-col lg:flex-row gap-2 lg:gap-50 justify-between text-right">
-            <div className="organisation text-[14px] lg:text-2xl ">
-              {organisation}
+          <div className="work flex-1 flex flex-row items-center justify-end gap-4">
+            <div className="flex flex-col items-end text-right">
+              <div className="organisation text-[14px] lg:text-2xl whitespace-nowrap">
+                {organisation}
+              </div>
+              <div className="job font-fira text-[14px] lg:text-2xl whitespace-nowrap">
+                {job}
+              </div>
             </div>
-            <div className="job font-fira text-[14px] lg:text-2xl ">
-              {job}
-            </div>
+            <motion.div animate={{ rotate: open ? 180 : 0 }} className="shrink-0 flex items-center">
+              <FaChevronDown className="text-[14px] lg:text-xl text-[#a6a6a6]" />
+            </motion.div>
           </div>
         </div>
 
