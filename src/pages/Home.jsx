@@ -145,7 +145,7 @@ function Home() {
 
         {/* Links */}
         <div className="flex justify-center items-center gap-8 mt-10 text-gray-400">
-          <SocialLink alt="Resume" link="https://gourav1632.github.io/Profile/Resume.pdf" Icon={PiReadCvLogoFill} />
+          <SocialLink alt="Resume" link="https://drive.google.com/file/d/1mXqO5xHrN7xvLx5C4j-z7jS-DWXZ4tcG/view?usp=sharing" Icon={PiReadCvLogoFill} />
           <SocialLink alt="Github" link="https://github.com/Gourav1632" Icon={IoLogoGithub} />
           <SocialLink alt="LinkedIn" link="https://www.linkedin.com/in/gourav-kumar-4230b7286/" Icon={FaLinkedinIn} />
         </div>
