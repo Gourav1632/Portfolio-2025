@@ -29,22 +29,29 @@ function WorkCard({ organisation, job, starting, ending, description }) {
         } cursor-pointer flex flex-col gap-4 pt-4`}
       >
         <div className="px-8 md:px-20 lg:px-20 xl:px-40 2xl:px-80 font-[Open_Sans] flex items-center text-2xl gap-15 lg:gap-30">
-          <div className="duration min-w-1/6 text-[#a6a6a6] text-[12px] lg:text-xl flex flex-row">
-            <div className="starting whitespace-nowrap">{starting} -&nbsp;</div>
-            <div className="ending whitespace-nowrap">{ending}</div>
-          </div>
           <div className="work flex-1 flex flex-row items-center justify-end gap-4">
-            <div className="flex flex-col items-end text-right">
-              <div className="organisation text-[14px] lg:text-2xl whitespace-nowrap">
-                {organisation}
-              </div>
-              <div className="job font-fira text-[14px] lg:text-2xl whitespace-nowrap">
-                {job}
-              </div>
+
+            <div className="flex flex-col  w-full gap-2">
+                {/* first row */}
+                <div className='flex justify-between w-full'>
+                  <div className="organisation text-[14px] lg:text-2xl whitespace-nowrap">
+                    {organisation}
+                  </div>
+                  <div className="duration min-w-1/6 text-[#a6a6a6] text-[12px] lg:text-xl flex flex-row">
+                    <div className="starting whitespace-nowrap">{starting} -&nbsp;</div>
+                    <div className="ending whitespace-nowrap">{ending}</div>
+                  </div>
+                </div>
+                {/* second row */}
+                <div className='flex justify-between gap-2'>
+                  <div className="job font-fira text-[14px] lg:text-2xl">
+                    {job}
+                  </div>
+                  <motion.div animate={{ rotate: open ? 180 : 0 }} className="shrink-0 flex ">
+                    <FaChevronDown className="text-[14px] lg:text-xl text-[#a6a6a6]" />
+                  </motion.div>
+                </div>
             </div>
-            <motion.div animate={{ rotate: open ? 180 : 0 }} className="shrink-0 flex items-center">
-              <FaChevronDown className="text-[14px] lg:text-xl text-[#a6a6a6]" />
-            </motion.div>
           </div>
         </div>
 
