@@ -37,7 +37,7 @@ function WorkCard({ organisation, job, starting, ending, description }) {
                   <div className="organisation text-[14px] lg:text-2xl whitespace-nowrap">
                     {organisation}
                   </div>
-                  <div className="duration min-w-1/6 text-[#a6a6a6] text-[12px] lg:text-xl flex flex-row">
+                  <div className="duration  text-[#a6a6a6] text-[12px] lg:text-xl flex flex-row">
                     <div className="starting whitespace-nowrap">{starting} -&nbsp;</div>
                     <div className="ending whitespace-nowrap">{ending}</div>
                   </div>
